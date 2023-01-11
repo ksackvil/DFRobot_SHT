@@ -26,7 +26,7 @@ void setup() {
   SHTC3.wakeup();/*SHTC3 is set to sleep mode by default. Please wake it up before use. Use SHTC3.sleep() to let SHTC3 enter sleep mode; SHTC3 stops working in sleep mode*/
 
   while((id = SHTC3.getDeviceID()) == 0){
-    Serial.println("ID retrieval error, please check whether the device is connected correctly!!!");
+    Serial.println("ID retrieval error, please check whether the device is connected correctly!");
     delay(1000);
   }
 

@@ -35,7 +35,7 @@ void setup() {
   SHT40.begin();
 
   while((id = SHT40.getDeviceID()) == 0){
-    Serial.println("ID retrieval error, please check whether the device is connected correctly!!!");
+    Serial.println("ID retrieval error, please check whether the device is connected correctly!");
     delay(1000);
   }
 

@@ -32,7 +32,7 @@ float DFRobot_SHT::getTemperature(uint16_t mode)
     return MODE_ERR;
   }
   while(!getTandRHRawData(&tem, &hum)){
-    DBG("ERR:Checksum error!!!");
+    DBG("ERR:Checksum error!");
     delay(1000);
   }
 
@@ -49,7 +49,7 @@ float DFRobot_SHT::getHumidity(uint16_t mode)
     return MODE_ERR;
   }
   while(!getTandRHRawData(&tem, &hum)){
-    DBG("ERR:Checksum error!!!");
+    DBG("ERR:Checksum error!");
     delay(1000);
   }
 
@@ -65,7 +65,7 @@ bool DFRobot_SHT::getTemHum(float &temperature, float &humidity,uint16_t mode)
     return false;
   }
   while(!getTandRHRawData(&tem, &hum)){
-    DBG("ERR:Checksum error!!!");
+    DBG("ERR:Checksum error!");
     delay(1000);
   }
 
